@@ -48,7 +48,6 @@ const Test1 = () => {
   return (
     <>
       <h1>{t("heading_test1")}</h1>
-
       <div className="contentStyle ">
         <Language />
         <div className="card-container ">

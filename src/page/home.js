@@ -35,16 +35,19 @@ const Home = () => {
           >
             {t("heading_test2")}
           </Card>
-          <Card
-            title={t("test3")}
-            bordered={false}
-            style={{
-              width: 300,
-              margin: "8px",
-            }}
-          >
-            {t("heading_test3")}
-          </Card>
+
+          <Link to={"/test3"} className="clearunderline">
+            <Card
+              title={t("test3")}
+              bordered={false}
+              style={{
+                width: 300,
+                margin: "8px",
+              }}
+            >
+              {t("heading_test3")}
+            </Card>
+          </Link>
         </div>
       </div>
     </>
