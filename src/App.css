@@ -1,38 +1,132 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container {
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  height: 100vh;
 }
 
-.App-link {
-  color: #61dafb;
+.contentStyle {
+  text-align: center;
+  justify-content: center;
+  margin: 7rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+h1 {
+  margin: 1rem;
+}
+
+button.ant-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.card-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.change-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.clearunderline {
+  text-decoration: none;
+}
+
+.gridpositionL {
+  margin-left: 3rem;
+}
+
+.gridpositionR {
+  margin-right: 3rem;
+}
+
+.change-card:hover {
+  background-color: #ffa200;
+}
+.change-card:active {
+  background-color: #6eda78;
+}
+
+.greenbtn {
+  background-color: #6eda78;
+}
+
+/* triangle */
+.triangleup {
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-bottom: 100px solid gray;
+  margin-right: 100px;
+}
+
+.triangledown {
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-top: 100px solid gray;
+  margin-left: 100px;
+}
+
+.triangleleft {
+  width: 0;
+  height: 0;
+  border-top: 50px solid transparent;
+  border-bottom: 50px solid transparent;
+  border-right: 100px solid gray;
+}
+
+.triangleright {
+  width: 0;
+  height: 0;
+  border-top: 50px solid transparent;
+  border-bottom: 50px solid transparent;
+  border-left: 100px solid gray;
+}
+
+/* shape */
+.circle {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: gray;
+}
+
+.square {
+  width: 100px;
+  height: 100px;
+  background-color: gray;
+}
+
+.rectangle {
+  width: 200px;
+  height: 100px;
+  background-color: gray;
+}
+
+.parallelogram {
+  width: 200px;
+  height: 100px;
+  background-color: gray;
+  transform: skewX(20deg);
+}
+
+.oval {
+  width: 200px;
+  height: 100px;
+  background-color: gray;
+  border-radius: 50%;
+}
+
+.trapezoid {
+  width: 250px;
+  height: 100px;
+  background-color: gray;
+  transform: perspective(10px) rotateX(1deg);
 }
